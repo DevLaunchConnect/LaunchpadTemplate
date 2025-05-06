@@ -32,7 +32,6 @@ Reusable starter repo for **every** Launchpad student squad—pre‑loaded with 
        # Local dev server
         npm run dev        # or: python manage.py runserver
 
-
 # Scripts
 | Command                    | Purpose                              |
 | -------------------------- | ------------------------------------ |
