@@ -1,17 +1,19 @@
 name: CI
-
 on: [push, pull_request]
 
 env:
-  # Default command; individual squads can override in repo Variables
-  TEST_CMD: npm test
+  # Default is a no‑op; squads override TEST_CMD in Variables
+  TEST_CMD: echo "✅ No tests yet – template repo"
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
+      # (Node setup step is optional but harmless)
+      - name: Run test command
+        run: ${{ env.TEST_CMD }}
+
 
       # Node setup is harmless for other languages (adds <1 min)
       - name: Set up Node 18 (if needed)
