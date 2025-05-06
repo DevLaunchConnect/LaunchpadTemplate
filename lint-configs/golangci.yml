@@ -1,0 +1,1 @@
+run: echo   skip-dirs: ["vendor"] echo linters: echo   enable: ["govet", "golint"]

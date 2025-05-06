@@ -1,0 +1,1 @@
+root = true echo. echo[*] echo indent_style = space echo indent_size = 2 echo end_of_line = lf echocharset = utf-8 echo trim_trailing_whitepace = true echo insert_final_newline = true

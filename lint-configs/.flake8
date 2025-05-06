@@ -1,0 +1,1 @@
+[flake8] echo max-line-length = 100
