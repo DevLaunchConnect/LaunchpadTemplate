@@ -1,5 +1,6 @@
 # Launchpad Template 🚀
 
+[![Live Preview](https://img.shields.io/badge/preview-live‑green?logo=vercel)](https://example.com)  
 [![CI Status](https://github.com/DevLaunchConnect/launchpad-template/actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)  
 ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 
@@ -81,6 +82,19 @@ Open a pull request; require one squadmate review plus green CI.<br>
 Squash & merge when approved, then delete the branch.<br>
 
 <br>
+
+## Contributing 🙋
+
+Student squads should follow these steps for every change:
+
+1. **Branch** off `main` using a descriptive name (e.g., `feature/login-form`).
+2. **Write / update tests** so coverage stays ≥ 70 %.
+3. **Run lint & format** locally (`npm run lint && npm run format` or `flake8 && black .`).
+4. Open a **PR** — one teammate must **Approve** and **CI must be green**.
+5. Choose **Squash & merge** so `main` history stays one‑commit‑per‑PR.
+
+See `.github/PULL_REQUEST_TEMPLATE.md` for the checklist that must be ticked before merge.
+ <br>
 
 ## Customization Checklist ✅
 
