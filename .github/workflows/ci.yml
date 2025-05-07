@@ -1,0 +1,29 @@
+name: CI
+on: [push, pull_request]
+
+env:
+  # Default is a no‑op; squads override TEST_CMD in Variables
+  TEST_CMD: echo "✅ No tests yet – template repo"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # (Node setup step is optional but harmless)
+      - name: Run test command
+        run: ${{ env.TEST_CMD }}
+
+
+      # Node setup is harmless for other languages (adds <1 min)
+      - name: Set up Node 18 (if needed)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # Try install; ignore failure for non‑npm stacks
+      - name: Install npm deps (skip on other stacks)
+        run: npm ci || true
+
+      - name: Run test command
+        run: ${{ env.TEST_CMD }}

@@ -20,6 +20,7 @@ Reusable starter repo for **every** Launchpad student squad—pre‑loaded with 
     ```bash
     ## Node example
        npm install
+    
     # Python example
       python -m venv venv
       source venv/bin/activate
@@ -32,7 +33,7 @@ Reusable starter repo for **every** Launchpad student squad—pre‑loaded with 
        # Local dev server
         npm run dev        # or: python manage.py runserver
 
-# Scripts
+## Scripts
 | Command                    | Purpose                              |
 | -------------------------- | ------------------------------------ |
 | `npm run dev` / `make dev` | Start local development server       |
@@ -47,7 +48,7 @@ CI Gate: a pull request fails if <br>
 • code fails lint / format checks.<br>
 
 
-# Folder Structure (starter)
+## Folder Structure (starter)
   
     <YOUR‑REPO>
     ├── src/ or app/                    # main application code
@@ -62,7 +63,7 @@ Swap or extend folders to match your language or framework.
 
 <br>
 
-# Branch & PR Policy
+## Branch & PR Policy
 
 Create a feature branch off main. <br>
 <br>
@@ -72,7 +73,7 @@ Squash & merge when approved, then delete the branch.<br>
 
 <br>
 
-# Customization Checklist ✅
+## Customization Checklist ✅
 
 - [ ] Update the CI & Coverage badges to point at your new repo path.  
 - [ ] Swap ESLint / flake8 / golangci‑lint rules to match your language.  
@@ -81,11 +82,72 @@ Squash & merge when approved, then delete the branch.<br>
 
 <br>
 
-# License
+# Dev Squad Usage Guide 🛠️🚦
+
+## 0 · Guard‑rails at a Glance 
+| Guard‑rail              | Why it exists                      | What you must do                                     |
+| ----------------------- | ---------------------------------- | ---------------------------------------------------- |
+| `.editorconfig`         | Enforces 2‑space indent, LF, UTF‑8 | Keep “Respect .editorconfig” on in your IDE          |
+| `.gitignore` (polyglot) | Blocks caches & build artifacts    | Leave as‑is; add patterns if needed                  |
+| **CI workflow**         | Runs `TEST_CMD` on every push/PR   | Set `TEST_CMD` variable (`npm test`, `pytest`, etc.) |
+| Branch rule             | Forces review + green CI           | Work in feature branches; PR → review → merge        |
+| Security defaults       | Dependabot, secret‑scanning        | Merge security PRs; never commit secrets             |
+
+## 1 · Spin‑Up Checklist
+
+- [ ] Clone repo locally.
+
+- [ ] Install stack deps (npm install, pip install -r requirements.txt, etc.).
+
+- [ ] Copy a lint config from lint-configs/ if desired.
+
+- [ ] Write at least one unit test in test/.
+
+- [ ] Commit & push initial scaffold.
+
+## 2 · Tell CI how to test your stack
+1. Settings → Secrets and variables → Actions → Variables → New.
+<br>
+2. Name: TEST_CMD Value: e.g., pytest, go test ./..., npm test.
+<br>
+3. Save — next CI run uses it.
+
+## 3 · Local Dev Tips
+| Task        | Command (examples)                      |
+| ----------- | --------------------------------------- |
+| Lint code   | `npm run lint` / `flake8`               |
+| Auto‑format | `npm run format` / `black .`            |
+| Run tests   | `npm test` / `pytest` / `go test ./...` |
+
+## 4 · Security / Secrets
+Store API keys in Settings → Secrets → Actions; access via process.env.MY_KEY or $MY_KEY.
+Dependabot alerts appear as PRs—merge them promptly.
+
+
+##  5 · Troubleshooting CI
+
+| Symptom                         | Fix                                               |
+| ------------------------------- | ------------------------------------------------- |
+| `npm ERR! missing script: test` | Set `TEST_CMD` to a real command.                 |
+| Coverage fails threshold        | Write more tests or adjust threshold in workflow. |
+| “command not found”             | Install tools or use dockerized test command.     |
+
+##  6 · Final Demo‑Ready Checklist
+
+- [ ] main CI green.
+
+- [ ] Coverage ≥ 70 % (or agreed target).
+
+- [ ] Lint passes.
+
+- [ ] README updated with run instructions.
+
+- [ ] Staging deployment refreshed (if applicable).
+
+## License
 
 
 Released under the MIT license — share freely, learn loudly.
-
 
 "" 
 "" 
