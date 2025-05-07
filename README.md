@@ -62,6 +62,14 @@ CI Gate: a pull request fails if <br>
 Swap or extend folders to match your language or framework.
 
 <br>
+## Secrets & Environment Variables
+
+1. Fill real keys in `.env` locally.  
+2. **Never commit `.env`** – it’s ignored by .gitignore.  
+3. For CI / GitHub Actions add secrets in **Repo → Settings → Secrets & variables → Actions**  
+   (e.g., `STRIPE_TEST_KEY`, `DATABASE_URL`).  
+4. If you need the secret in Vercel/Render, replicate the same key there.
+<br>
 
 ## Branch & PR Policy
 
