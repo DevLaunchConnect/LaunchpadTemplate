@@ -93,7 +93,6 @@ Student squads should follow these steps for every change:
 4. Open a **PR** — one teammate must **Approve** and **CI must be green**.
 5. Choose **Squash & merge** so `main` history stays one‑commit‑per‑PR.
 
-See `.github/PULL_REQUEST_TEMPLATE.md` for the checklist that must be ticked before merge.
  <br>
 
 ## Customization Checklist ✅
