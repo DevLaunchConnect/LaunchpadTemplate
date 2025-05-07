@@ -129,9 +129,7 @@ Student squads should follow these steps for every change:
 
 ## 2 · Tell CI how to test your stack 🤖
 1. Settings → Secrets and variables → Actions → Variables → New.
-<br>
 2. Name: TEST_CMD Value: e.g., pytest, go test ./..., npm test.
-<br>
 3. Save — next CI run uses it.
 
 ## 3 · Local Dev Tips 💻
