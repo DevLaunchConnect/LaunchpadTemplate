@@ -8,7 +8,7 @@ Reusable starter repo for **every** Launchpad student squad—pre‑loaded with 
 
 ---
 
-# Quick Start (3 Steps)
+# Quick Start (3 Steps) ⚡️
 
  1. **Clone the template**
  
@@ -34,7 +34,7 @@ Reusable starter repo for **every** Launchpad student squad—pre‑loaded with 
        # Local dev server
         npm run dev        # or: python manage.py runserver
 
-## Scripts
+## Scripts 📜
 | Command                    | Purpose                              |
 | -------------------------- | ------------------------------------ |
 | `npm run dev` / `make dev` | Start local development server       |
@@ -49,7 +49,7 @@ CI Gate: a pull request fails if <br>
 • code fails lint / format checks.<br>
 
 
-## Folder Structure (starter)
+## Folder Structure (starter) 📂
   
     <YOUR‑REPO>
     ├── src/ or app/                    # main application code
@@ -64,7 +64,7 @@ Swap or extend folders to match your language or framework.
 
 <br>
 
-## Secrets & Environment Variables
+## Secrets & Environment Variables 🔑
 
 1. Fill real keys in `.env` locally.  
 2. **Never commit `.env`** – it’s ignored by .gitignore.  
@@ -73,7 +73,7 @@ Swap or extend folders to match your language or framework.
 4. If you need the secret in Vercel/Render, replicate the same key there.
 <br>
 
-## Branch & PR Policy
+## Branch & PR Policy 🔀
 
 Create a feature branch off main. <br>
 <br>
@@ -95,7 +95,7 @@ Student squads should follow these steps for every change:
 
  <br>
 
-## Customization Checklist ✅
+## 🧩 Customization Checklist ✅
 
 - [ ] Update the CI & Coverage badges to point at your new repo path.  
 - [ ] Swap ESLint / flake8 / golangci‑lint rules to match your language.  
@@ -104,9 +104,9 @@ Student squads should follow these steps for every change:
 
 <br>
 
-# Dev Squad Usage Guide 🛠️🚦
+# 🛠️ Dev Squad Usage Guide 🚦
 
-## 0 · Guard‑rails at a Glance 
+## 0 · Guard‑rails at a Glance 🛡️
 | Guard‑rail              | Why it exists                      | What you must do                                     |
 | ----------------------- | ---------------------------------- | ---------------------------------------------------- |
 | `.editorconfig`         | Enforces 2‑space indent, LF, UTF‑8 | Keep “Respect .editorconfig” on in your IDE          |
@@ -115,7 +115,7 @@ Student squads should follow these steps for every change:
 | Branch rule             | Forces review + green CI           | Work in feature branches; PR → review → merge        |
 | Security defaults       | Dependabot, secret‑scanning        | Merge security PRs; never commit secrets             |
 
-## 1 · Spin‑Up Checklist
+## 1 · Spin‑Up Checklist 🏁
 
 - [ ] Clone repo locally.
 
@@ -127,26 +127,26 @@ Student squads should follow these steps for every change:
 
 - [ ] Commit & push initial scaffold.
 
-## 2 · Tell CI how to test your stack
+## 2 · Tell CI how to test your stack 🤖
 1. Settings → Secrets and variables → Actions → Variables → New.
 <br>
 2. Name: TEST_CMD Value: e.g., pytest, go test ./..., npm test.
 <br>
 3. Save — next CI run uses it.
 
-## 3 · Local Dev Tips
+## 3 · Local Dev Tips 💻
 | Task        | Command (examples)                      |
 | ----------- | --------------------------------------- |
 | Lint code   | `npm run lint` / `flake8`               |
 | Auto‑format | `npm run format` / `black .`            |
 | Run tests   | `npm test` / `pytest` / `go test ./...` |
 
-## 4 · Security / Secrets
+## 4 · Security / Secrets 🔐
 Store API keys in Settings → Secrets → Actions; access via process.env.MY_KEY or $MY_KEY.
 Dependabot alerts appear as PRs—merge them promptly.
 
 
-##  5 · Troubleshooting CI
+##  5 · Troubleshooting CI 🩺
 
 | Symptom                         | Fix                                               |
 | ------------------------------- | ------------------------------------------------- |
@@ -154,7 +154,7 @@ Dependabot alerts appear as PRs—merge them promptly.
 | Coverage fails threshold        | Write more tests or adjust threshold in workflow. |
 | “command not found”             | Install tools or use dockerized test command.     |
 
-##  6 · Final Demo‑Ready Checklist
+##  6 · Final Demo‑Ready Checklist 🚀
 
 - [ ] main CI green.
 
@@ -166,7 +166,7 @@ Dependabot alerts appear as PRs—merge them promptly.
 
 - [ ] Staging deployment refreshed (if applicable).
 
-## License
+## License 📄
 
 
 Released under the MIT license — share freely, learn loudly.
