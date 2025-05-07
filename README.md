@@ -1,4 +1,4 @@
-# Launchpad Template 🚀
+# 🚀 Launchpad Template 🚀
 
 [![Live Preview](https://img.shields.io/badge/preview-live‑green?logo=vercel)](https://example.com)  
 [![CI Status](https://github.com/DevLaunchConnect/launchpad-template/actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)  
