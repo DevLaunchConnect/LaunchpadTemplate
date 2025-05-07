@@ -8,7 +8,7 @@ Reusable starter repo for **every** Launchpad student squad—pre‑loaded with 
 
 ---
 
-# Quick Start (3 Steps)
+# Quick Start (3 Steps)
 
  1. **Clone the template**
  
