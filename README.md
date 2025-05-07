@@ -62,6 +62,7 @@ CI Gate: a pull request fails if <br>
 Swap or extend folders to match your language or framework.
 
 <br>
+
 ## Secrets & Environment Variables
 
 1. Fill real keys in `.env` locally.  
