@@ -170,6 +170,3 @@ Dependabot alerts appear as PRs—merge them promptly.
 
 
 Released under the MIT license — share freely, learn loudly.
-
-"" 
-"" 
