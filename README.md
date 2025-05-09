@@ -164,6 +164,11 @@ Dependabot alerts appear as PRs—merge them promptly.
 
 - [ ] Staging deployment refreshed (if applicable).
 
+- [ ] ### 🧪 Pre‑Demo Smoke Test
+
+Run our [Smoke-Test Checklist](https://docs.google.com/document/d/1xBYHSNtBob5Rfq4WkbzUX3dsP4blVkwCvfq2S5UF7R0/edit?usp=sharing) one hour before your Friday demo.
+
+
 ## License 📄
 
 
